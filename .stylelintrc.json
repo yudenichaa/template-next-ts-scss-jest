@@ -1,17 +1,3 @@
 {
-  "extends": "stylelint-config-sass-guidelines",
-  "rules": {
-    "property-no-vendor-prefix": [
-      true,
-      {
-        "ignoreProperties": ["text-size-adjust", "appearance"]
-      }
-    ],
-    "selector-no-qualifying-type": [
-      true,
-      {
-        "ignore": ["attribute"]
-      }
-    ] 
-  }
+  "extends": ["stylelint-config-prettier", "stylelint-config-idiomatic-order"]
 }

@@ -1,11 +1,14 @@
 import Head from 'next/head';
 
-export default function Home() {
+export default function HomePage(): JSX.Element {
   return (
     <>
       <Head>
-        <title>Template</title>
+        <title>Home page</title>
       </Head>
+      <main>
+        <h1>Home page</h1>
+      </main>
     </>
   );
 }

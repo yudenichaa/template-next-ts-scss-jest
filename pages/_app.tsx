@@ -1,14 +1,15 @@
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import '../styles/normalize.css';
+import '../styles/fonts.css';
+import '../styles/global.scss';
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>
       <Head>
         <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <Component {...pageProps} />
     </>

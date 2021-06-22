@@ -1,38 +1,47 @@
 {
-  "name": "template-next-ts-scss",
+  "name": "template",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "yarn run eslint; yarn run stylelint",
-    "lint:fix": "yarn run eslint:fix; yarn run stylelint:fix",
+    "start:prod": "next start -H 0.0.0.0 -p ${PORT:-8080}",
+    "lint": "yarn run prettier; yarn run eslint; yarn run stylelint",
+    "lint:fix": "yarn run prettier:fix; yarn run eslint:fix; yarn run stylelint:fix",
     "eslint": "eslint '**/*.{ts,tsx,json}'",
     "eslint:fix": "eslint --fix '**/*.{ts,tsx,json}'",
     "stylelint": "stylelint '**/*.{sass,scss,css,less}'",
-    "stylelint:fix": "stylelint --fix '**/*.{sass,scss,css,less}'"
+    "stylelint:fix": "stylelint --fix '**/*.{sass,scss,css,less}'",
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write ."
   },
   "dependencies": {
-    "next": "^10.0.1",
+    "classnames": "^2.2.6",
+    "next": "10.0.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
+    "@types/classnames": "^2.2.11",
     "@types/node": "^14.14.7",
     "@types/react": "^16.9.56",
-    "@typescript-eslint/eslint-plugin": "^4.15.0",
-    "@typescript-eslint/parser": "^4.15.0",
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
+    "@typescript-eslint/parser": "^4.15.1",
     "eslint": "^7.20.0",
-    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-json": "^2.1.2",
     "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "2.2.1",
     "sass": "^1.29.0",
     "stylelint": "^13.10.0",
-    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-prettier": "^8.0.2",
     "typescript": "^4.0.5"
   }
 }
