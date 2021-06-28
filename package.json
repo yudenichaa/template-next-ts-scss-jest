@@ -6,7 +6,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "start:prod": "next start -H 0.0.0.0 -p ${PORT:-8080}",
     "lint": "yarn run prettier; yarn run eslint; yarn run stylelint",
     "lint:fix": "yarn run prettier:fix; yarn run eslint:fix; yarn run stylelint:fix",
     "eslint": "eslint '**/*.{ts,tsx,json}'",

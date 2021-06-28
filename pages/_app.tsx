@@ -10,6 +10,7 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       </Head>
       <Component {...pageProps} />
     </>

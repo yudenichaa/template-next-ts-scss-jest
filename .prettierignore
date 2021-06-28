@@ -1,5 +1,2 @@
-node_modules
 .next
 .vscode
-public/sw.js
-public/workbox-*.js
